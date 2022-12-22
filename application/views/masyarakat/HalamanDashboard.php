@@ -1,5 +1,5 @@
 <!-- Sidebar -->
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gray-900 sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
@@ -102,15 +102,10 @@
                 <li class="nav-item dropdown no-arrow">
                     <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?= $user['nama'] ?></span>
-                        <img class="img-profile rounded-circle" src="assets/img/undraw_profile.svg">
+                        <!-- <img class="img-profile rounded-circle" src="assets/img/undraw_profile.svg"> -->
                     </a>
                     <!-- Dropdown - User Information -->
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                        <a class="dropdown-item" href="#">
-                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                            Profile
-                        </a>
-                        <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="<?= base_url('sistem/logout') ?>" data-toggle="modal" data-target="#logoutModal">
                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                             Logout
@@ -126,8 +121,62 @@
         <div class="container-fluid">
 
             <!-- Page Heading -->
-            <h1 class="h3 mb-4 text-gray-800">Blank Page</h1>
 
+            <h1 class="h3 mb-4 text-gray-800">Kantor Lurah Tampan</h1>
+            <div class="container text-center">
+                <img class="text-center" width="463" height="222" src="<?= base_url() ?>assets/img/logo.png">
+            </div>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Profile
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body text-center">
+                            <p class="text-justify">Kelurahan Tampan merupakan salah satu kelurahan yang ada dalam wilayah administrasi Kecamatan Payung Sekaki, Kota Pekanbaru, Provinsi Riau. Alamat Kantor Lurah Tampan di Jalan Kayu Manis No. 133, Pekanbaru, Riau. Luas wilayah Kelurahan Tampan sekitar 2,69 kilometer persegi atau 6 persen dari total luas Kecamatan Payung Sekaki. Kelurahan Tampan berada di ketinggian 9 meter di atas permukaan laut (Mdpl).</p>
+                            <p class="text-justify">Kelurahan Tampan memiliki 17 RT dan 4 RW. Tercatat sebanyak 1.749 Kepala Keluarga (KK) yang berdiam di kelurahan ini. Sementara, jumlah penduduk Kelurahan Tampan sebanyak 8.648 jiwa. Jumlah itu terdiri dari 3.838 orang laki-laki dan 4.810 orang perempuan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Visi Dan Misi
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <p class="text-center">VISI</p>
+                            <p class="text-center"> <i>Terwujudnya Kelurahan terdepan dalam pelayanan masyarakat untuk mewujudkan Kota Pekanbaru sebagai smart city yang madani.</i></p>
+                            <p class="text-center">MISI</p>
+                            <p class="text-center">Menggali dan memotivasi potensi sumber daya dalam rangka percepatan pertumbuhan di bidang pemerintahan, keamanan dan ketertiban, kesejahteraan sosial, pembangunan, dan pemberdayaan masyarakat.</p>
+                            <p class="text-center">Mewujudkan tata kelola pemerintahan yang berdaya guna dan berhasil guna dengan mengedepankan kualitas pelayanan publik sesuai ketentuan yang berlaku.</p>
+                            <p class="text-center">Menciptakan keseimbangan dan keserasian pembangunan masyarakat modern dan madani yang berwawasan lingkungan.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Collapsible Group Item #3
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            And lastly, the placeholder content for the third and final accordion panel. This panel is hidden by default.
+                        </div>
+                    </div>
+                </div> -->
+            </div>
         </div>
         <!-- /.container-fluid -->
 

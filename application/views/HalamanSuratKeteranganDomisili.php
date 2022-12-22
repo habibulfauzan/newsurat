@@ -10,8 +10,8 @@
     <div class="row">
         <div class="col-md-12">
             <?= $this->session->flashdata('message'); ?>
-            <!-- <form method="post" enctype="multipart/form-data" action="<?= base_url(); ?>HalamanDomisili/simpan"> -->
-            <?= form_open_multipart('HalamanDomisili/simpan') ?>
+            <!-- <form method="post" enctype="multipart/form-data" action="<?= base_url(); ?>HalamanSuratKeteranganDomisili/simpan"> -->
+            <?= form_open_multipart('HalamanSuratKeteranganDomisili/simpan') ?>
             <div class="card">
                 <div class="card-header">FORM TAMBAH REQUEST SKD </div>
                 <div class="card-body">
@@ -61,7 +61,7 @@
                         </div>
 
                         <div class="card-action col-md-2">
-                            <button type="submit" name="submit" class="btn btn-success">Kirim</button>
+                            <button type="submit" name="submit" class="btn btn-secondary">Kirim</button>
                             <a href="#" class="btn btn-default">Batal</a>
                         </div>
                     </div>

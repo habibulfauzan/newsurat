@@ -14,7 +14,7 @@ class HalamanSuratKeteranganTidakMampu extends CI_Controller
             redirect('HalamanLogin/tampil');
         }
     }
-    public function index()
+    public function tampil()
     {
         $data['title'] = 'SURAT KETERANGAN TIDAK MAMPU';
         $data['user'] = $this->Akun->getUser();
@@ -36,7 +36,7 @@ class HalamanSuratKeteranganTidakMampu extends CI_Controller
             }
             if ($aw->status == 0) {
                 $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> SURAT SUDAH PERNAH DIREQUEST, SURAT SEDANG MENUNGGU PROSES ADMIN! </div>');
-                redirect('HalamanSuratKeteranganTidakMampu');
+                redirect('HalamanSuratKeteranganTidakMampu/tampil');
                 var_dump($cek);
             }
         }
@@ -118,7 +118,7 @@ class HalamanSuratKeteranganTidakMampu extends CI_Controller
 
                 $this->Surat->submitSurat('suratketerangantidakmampu', $data);
                 $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Berhasil Request Surat Permohonan! </div>');
-                redirect('HalamanSuratKeteranganTidakMampu');
+                redirect('HalamanSuratKeteranganTidakMampu/tampil');
             }
         }
     }

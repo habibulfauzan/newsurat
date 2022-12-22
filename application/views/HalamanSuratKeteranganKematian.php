@@ -88,7 +88,7 @@
                             </div>
 
                             <div class="card-action col-md-2">
-                                <button type="submit" name="submit" class="btn btn-success">Kirim</button>
+                                <button type="submit" name="submit" class="btn btn-secondary">Kirim</button>
                                 <a href="#" class="btn btn-default">Batal</a>
                             </div>
                         </div>

@@ -43,11 +43,11 @@
                                                     <td><?= $row->nama ?></td>
                                                     <td><button class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#lihatFile<?= $row->id; ?>"><i class="fa fa-eye"></i></button></td>
                                                     <?php if ($row->status == '0') : ?>
-                                                        <td><button type="submit" name="submit" class="btn btn-sm btn-warning">Pending</button></td>
+                                                        <td><span class="btn btn-sm btn-warning">Waiting</span></td>
                                                     <?php elseif ($row->status == '1') : ?>
-                                                        <td><button type="submit" name="submit" class="btn btn-sm btn-success">Diterima</button></td>
+                                                        <td><span class="btn btn-sm btn-success">Diterima</span></td>
                                                     <?php else : ?>
-                                                        <td><button type="submit" name="submit" class="btn btn-sm btn-danger">Ditolak</button></td>
+                                                        <td><span class="btn btn-sm btn-danger">Ditolak</span></td>
                                                     <?php endif ?>
                                                     <td><?= $row->date ?></td>
                                                     <?php if ($row->status == 1) : ?>
@@ -107,11 +107,11 @@
                                                     <td><?= $row->nama ?></td>
                                                     <td><button class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#lihatFile2<?= $row->id; ?>"><i class="fa fa-eye"></i></button></td>
                                                     <?php if ($row->status == '0') : ?>
-                                                        <td><button type="submit" name="submit" class="btn btn-sm btn-warning">Pending</button></td>
+                                                        <td><span type="submit" name="submit" class="btn btn-sm btn-warning">Waiting</span></td>
                                                     <?php elseif ($row->status == '1') : ?>
-                                                        <td><button type="submit" name="submit" class="btn btn-sm btn-success">Diterima</button></td>
+                                                        <td><span type="submit" name="submit" class="btn btn-sm btn-success">Diterima</span></td>
                                                     <?php else : ?>
-                                                        <td><button type="submit" name="submit" class="btn btn-sm btn-danger">Ditolak</button></td>
+                                                        <td><span type="submit" name="submit" class="btn btn-sm btn-danger">Ditolak</span></td>
                                                     <?php endif ?>
                                                     <td><?= $row->date ?></td>
                                                     <?php if ($row->status == 1) : ?>
@@ -170,11 +170,11 @@
                                                     <td><?= $row->namaJenazah ?></td>
                                                     <td><button class="btn btn-sm btn-outline-info" data-toggle="modal" data-target="#lihatFile3<?= $row->id; ?>"><i class="fa fa-eye"></i></button></td>
                                                     <?php if ($row->status == '0') : ?>
-                                                        <td><button type="submit" name="submit" class="btn btn-sm btn-warning">Pending</button></td>
+                                                        <td><span type="submit" name="submit" class="btn btn-sm btn-warning">Waiting</span></td>
                                                     <?php elseif ($row->status == '1') : ?>
-                                                        <td><button type="submit" name="submit" class="btn btn-sm btn-success">Diterima</button></td>
+                                                        <td><span type="submit" name="submit" class="btn btn-sm btn-success">Diterima</span></td>
                                                     <?php else : ?>
-                                                        <td><button type="submit" name="submit" class="btn btn-sm btn-danger">Ditolak</button></td>
+                                                        <td><span type="submit" name="submit" class="btn btn-sm btn-danger">Ditolak</span></td>
                                                     <?php endif ?>
                                                     <td><?= $row->date ?></td>
                                                     <?php if ($row->status == 1) : ?>
@@ -408,7 +408,7 @@
                                                 <td><?= $row->agama ?></td>
                                             </tr>
                                             <tr>
-                                                <td>No. NIK</td>
+                                                <td>NIK</td>
                                                 <td>:</td>
                                                 <td><?= $row->nik ?></td>
                                             </tr>
@@ -630,7 +630,7 @@
                                                     <td><?= $row->agama; ?></td>
                                                 </tr>
                                                 <tr>
-                                                    <td>No. NIK</td>
+                                                    <td>NIK</td>
                                                     <td>:</td>
                                                     <td><?= $row->nik; ?></td>
                                                 </tr>

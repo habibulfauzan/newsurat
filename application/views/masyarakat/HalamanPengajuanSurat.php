@@ -7,7 +7,7 @@
     </div>
 
     <!-- Requests Card Example -->
-    <a href="<?= base_url('HalamanSuratKeteranganTidakMampu') ?>">
+    <a href="<?= base_url('HalamanSuratKeteranganTidakMampu/tampil') ?>">
         <div class="row">
             <div class="col-lg mb-4">
                 <div class="card border-left-warning shadow h-auto py-2">
@@ -28,7 +28,7 @@
     </a>
 
     <!-- Requests Card Example -->
-    <a href="<?= base_url('HalamanDomisili') ?>">
+    <a href="<?= base_url('HalamanSuratKeteranganDomisili/tampil') ?>">
         <div class="row">
             <div class="col-lg mb-4">
                 <div class="card border-left-primary shadow h-auto py-2">

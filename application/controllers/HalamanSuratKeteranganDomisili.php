@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class HalamanDomisili extends CI_Controller
+class HalamanSuratKeteranganDomisili extends CI_Controller
 {
     public function __construct()
     {
@@ -14,14 +14,14 @@ class HalamanDomisili extends CI_Controller
             redirect('HalamanLogin/tampil');
         }
     }
-    public function index()
+    public function tampil()
     {
         $data['title'] = 'SURAT KETERANGAN DOMISILI';
         $data['user'] = $this->Akun->getUser();
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/masyarakat', $data);
-        $this->load->view('HalamanDomisili', $data);
+        $this->load->view('HalamanSuratKeteranganDomisili', $data);
         $this->load->view('templates/footer');
     }
 
@@ -33,7 +33,7 @@ class HalamanDomisili extends CI_Controller
         }
         if ($aw->status == 0) {
             $this->session->set_flashdata('message', '<div class="alert alert-danger" role="alert"> SURAT SUDAH PERNAH DIREQUEST, SURAT SEDANG MENUNGGU PROSES ADMIN! </div>');
-            redirect('HalamanDomisili');
+            redirect('HalamanSuratKeteranganDomisili/tampil');
         } else {
             if (isset($_POST['submit'])) {
                 $this->form_validation->set_rules('nama_lengkap', 'Nama', 'required|trim|min_length[3]');
@@ -43,7 +43,7 @@ class HalamanDomisili extends CI_Controller
                     $data['user'] = $this->Akun->getUser();
                     $this->load->view('templates/header', $data);
                     $this->load->view('templates/masyarakat', $data);
-                    $this->load->view('HalamanDomisili', $data);
+                    $this->load->view('HalamanSuratKeteranganDomisili', $data);
                     $this->load->view('templates/footer');
 
                     $jenissurat = [
@@ -110,10 +110,10 @@ class HalamanDomisili extends CI_Controller
 
                     $this->Surat->submitSurat('suratketerangandomisili', $data);
                     $this->session->set_flashdata('message', '<div class="alert alert-success" role="alert"> Berhasil Request Surat Permohonan! </div>');
-                    redirect('HalamanDomisili');
+                    redirect('HalamanSuratKeteranganDomisili/tampil');
                 }
             } else {
-                $this->index();
+                $this->tampil();
             }
         }
     }
