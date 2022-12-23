@@ -3,11 +3,11 @@
 <ul class="navbar-nav bg-gray-900 sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('HalamanDashboard/lurah'); ?>">
         <div class="sidebar-brand-icon">
             <i class="far fa-user"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Tampan</div>
+        <div class="sidebar-brand-text mx-1">Lurah Tampan</div>
     </a>
 
     <!-- Divider -->

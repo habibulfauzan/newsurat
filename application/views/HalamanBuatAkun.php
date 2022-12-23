@@ -63,7 +63,7 @@
                                 transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;"]
                                 ); ?>
                             </div>
-                            <button type="submit" class="btn btn-primary btn-user btn-block">
+                            <button type="submit" class="btn btn-dark btn-user btn-block">
                                 Daftar Akun
                             </button>
                         </form>
