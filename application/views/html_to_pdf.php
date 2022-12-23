@@ -93,25 +93,58 @@
                 <tr>
                     <td>Agama</td>
                     <td>:</td>
-                    <td><?= $surat['suratketerangankematian'] . ['agama'] ?></td>
-                </tr>
-                <tr>
-                    <td>No. NIK</td>
-                    <td>:</td>
-                    <td><?= $surat['nik'] ?></td>
-                </tr>
-                <tr>
-                    <td>Alamat</td>
-                    <td>:</td>
-                    <td><?= $surat['alamat'] ?></td>
+                    <td><?= $surat['suratketerangankematian'] . $surat['agama'] ?></td>
                 </tr>
             </table>
             <br>
             <table border="0" align="center">
                 <tr>
                     <td>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nama tersebut diatas benar penduduk kami yang berdomisili di <?= $surat['alamat'] ?> <br> Kelurahan Tampan Kecamatan Payung Sekaki Kota Pekanbaru.<br>
+                        Orang tersebut benar telah meninggal dunia pada:<br>
                     </td>
+                </tr>
+            </table>
+            <table border="0" align="center">
+                <tr>
+                    <td>Hari</td>
+                    <td>:</td>
+                    <td><?= date('l', strtotime($surat['tanggakKematian'])) ?></td>
+                </tr>
+                <tr>
+                    <td>Tanggal</td>
+                    <td>:</td>
+                    <td><?= $surat['tanggakKematian'] ?></td>
+                </tr>
+            </table>
+            <br>
+            <table border="0" align="center">
+                <tr>
+                    <td>
+                        Surat Keterangan ini dibuat berdasarkan laporan dari:
+                    </td>
+                </tr>
+            </table>
+
+            <table border="0" align="center">
+                <tr>
+                    <td>Nama</td>
+                    <td>:</td>
+                    <td><?= $surat['nama'] ?></td>
+                </tr>
+                <tr>
+                    <td>NIK</td>
+                    <td>:</td>
+                    <td><?= $surat['nikPemohon'] ?></td>
+                </tr>
+                <tr>
+                    <td>Tempat, tanggal lahir</td>
+                    <td>:</td>
+                    <td><?= $surat['tempatLahir'] . ', ' . $surat['tanggalLahir'] ?></td>
+                </tr>
+                <tr>
+                    <td>Alamat</td>
+                    <td>:</td>
+                    <td><?= $surat['alamat'] ?></td>
                 </tr>
             </table>
             <br>
@@ -129,7 +162,7 @@
             <?php $spasi3 = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ?>
             <?php $spasi2 = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ?>
 
-            <table border="1" align="center">
+            <table border="0" align="center">
                 <tr>
                     <th></th>
                     <th width="100px"></th>
@@ -144,7 +177,7 @@
                 <tr>
                     <td rowspan="15"></td>
                     <td></td>
-                    <td rowspan="15"></td>
+                    <td rowspan="15"><?= $spasi ?><img src="<?= base_url() ?>/assets/img/ttd_lurah.png" width="200" height="100" alt=""></td>
                 </tr>
                 <tr>
                     <td></td>

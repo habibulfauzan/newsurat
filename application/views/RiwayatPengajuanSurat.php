@@ -51,7 +51,7 @@
                                                     <?php endif ?>
                                                     <td><?= $row->date ?></td>
                                                     <?php if ($row->status == 1) : ?>
-                                                        <td><button class="btn btn-simple btn-success btn-sm" data-toggle="modal" data-target="#cetakSurat<?= $row->id; ?>"><i class="fas fa-fw fa-print"></i></button></td>
+                                                        <td><button class="btn btn-simple btn-success btn-sm" data-toggle="modal" data-target="#cetakSuratSktm<?= $row->id; ?>"><i class="fas fa-fw fa-print"></i></button></td>
                                                     <?php else : ?>
                                                         <td><button class="btn btn-simple btn-success btn-sm" title="Surat belum disetujui" disabled><i class="fas fa-fw fa-print"></i></button></td>
                                                     <?php endif ?>
@@ -115,7 +115,7 @@
                                                     <?php endif ?>
                                                     <td><?= $row->date ?></td>
                                                     <?php if ($row->status == 1) : ?>
-                                                        <td><button class="btn btn-simple btn-success btn-sm" data-toggle="modal" data-target="#cetakSurat<?= $row->id; ?>"><i class="fas fa-fw fa-print"></i></button></td>
+                                                        <td><button class="btn btn-simple btn-success btn-sm" data-toggle="modal" data-target="#cetakSuratSkd<?= $row->id; ?>"><i class="fas fa-fw fa-print"></i></button></td>
                                                     <?php else : ?>
                                                         <td><button class="btn btn-simple btn-success btn-sm" title="Surat belum disetujui" disabled><i class="fas fa-fw fa-print"></i></button></td>
                                                     <?php endif ?>
@@ -178,7 +178,7 @@
                                                     <?php endif ?>
                                                     <td><?= $row->date ?></td>
                                                     <?php if ($row->status == 1) : ?>
-                                                        <td><button class="btn btn-simple btn-success btn-sm" data-toggle="modal" data-target="#cetakSurat<?= $row->id; ?>"><i class="fas fa-fw fa-print"></i></button></td>
+                                                        <td><button class="btn btn-simple btn-success btn-sm" data-toggle="modal" data-target="#cetakSuratSkk<?= $row->id; ?>"><i class="fas fa-fw fa-print"></i></button></td>
                                                     <?php else : ?>
                                                         <td><button class="btn btn-simple btn-success btn-sm" title="Surat belum disetujui" disabled><i class="fas fa-fw fa-print"></i></button></td>
                                                     <?php endif ?>
@@ -307,7 +307,7 @@
                 <?php $no = 1;
                 if (!empty($surat_user)) : ?>
                     <?php foreach ($surat_user as $row) : ?>
-                        <div class="modal fade" id="cetakSurat<?= $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="fileLampiran" aria-hidden="true">
+                        <div class="modal fade" id="cetakSuratSktm<?= $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="fileLampiran" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -532,7 +532,7 @@
                 <?php $no = 1;
                 if (!empty($surat_user2)) : ?>
                     <?php foreach ($surat_user2 as $row) : ?>
-                        <div class="modal fade" id="cetakSurat<?= $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="fileLampiran" aria-hidden="true">
+                        <div class="modal fade" id="cetakSuratSkd<?= $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="fileLampiran" aria-hidden="true">
                             <div class="modal-dialog modal-lg" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -748,3 +748,264 @@
                 <?php else : ?>
                 <?php endif ?>
                 <!-- END MODAL CETAK SKD -->
+
+                <!-- START MODAL CETAK SKK -->
+                <?php $no = 1;
+                if (!empty($surat_user3)) : ?>
+                    <?php foreach ($surat_user3 as $row) : ?>
+                        <div class="modal fade" id="cetakSuratSkk<?= $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="fileLampiran" aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="fileLampiran">File ID: <?= $row->id ?></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <table border="1" align="center">
+                                            <table border="0" align="center">
+                                                <tr>
+                                                    <td><img src="<?= base_url() ?>/assets/img/logo_kecil.png" width="70" height="87" alt=""></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>
+                                                        <center>
+                                                            <font size="5"><b>PEMERINTAH KOTA PEKANBARU</b></font><br>
+                                                            <font size="5"><b>KECAMATAN PAYUNG SEKAK</b></font><br>
+                                                            <font size="5"><b>KELURAHAN TAMPAN</b></font><br>
+                                                            <font size="2"><i>Jalan Kayu Manis No. 133 Telepon (0761) --- Kode Pos 28292 Pekanbaru</i></font><br>
+                                                        </center>
+                                                    </td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="45">
+                                                        <hr color="black">
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <table border="0" align="center">
+                                                <tr>
+                                                    <td>
+                                                        <center>
+                                                            <font size="5"><b>SURAT KETERANGAN KEMATIAN</b></font><br>
+                                                            <hr style="margin:0px" color="black">
+                                                            <span>Nomor : <?= $row->id; ?>/SKK/<?= date('Y/m'); ?></span>
+                                                        </center>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <table border="0" align="center">
+                                                <tr>
+                                                    <td>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lurah Tampan Kecamatan Payung Sekaki Kota Pekanbaru dengan ini<br> menerangkan bahwa:
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <table border="0" align="center">
+                                                <tr>
+                                                    <td>Nama</td>
+                                                    <td>:</td>
+                                                    <td><?= $row->namaJenazah ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tempat, tanggal lahir</td>
+                                                    <td>:</td>
+                                                    <td><?= $row->tempatLahirJenazah . ', ' . $row->tanggalLahirJenazah ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Agama</td>
+                                                    <td>:</td>
+                                                    <td><?= $row->agamaJenazah ?></td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <table border="0" align="center">
+                                                <tr>
+                                                    <td>
+                                                        Orang tersebut benar telah meninggal dunia pada:<br>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <table border="0" align="center">
+                                                <tr>
+                                                    <td>Hari</td>
+                                                    <td>:</td>
+                                                    <td><?= date('l', strtotime($row->tanggakKematian)); ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tanggal</td>
+                                                    <td>:</td>
+                                                    <td><?= $row->tanggakKematian ?></td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <table border="0" align="center">
+                                                <tr>
+                                                    <td>
+                                                        Surat Keterangan ini dibuat berdasarkan laporan dari:
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                            <table border="0" align="center">
+                                                <tr>
+                                                    <td>Nama</td>
+                                                    <td>:</td>
+                                                    <td><?= $row->nama ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>NIK</td>
+                                                    <td>:</td>
+                                                    <td><?= $row->nikPemohon ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Tempat, tanggal lahir</td>
+                                                    <td>:</td>
+                                                    <td><?= $row->tempatLahir . ', ' . $row->tanggalLahir ?></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alamat</td>
+                                                    <td>:</td>
+                                                    <td><?= $row->alamat ?></td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <table border="0" align="center">
+                                                <tr>
+                                                    <td>
+                                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Demikianlah Surat Keterangan ini diberikan untuk dapat dipergunakan <br>sebagaimana mestinya.
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <?php $spasi = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ?>
+                                            <?php $spasi3 = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ?>
+                                            <?php $spasi2 = '&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;' ?>
+
+                                            <table border="0" align="center">
+                                                <tr>
+                                                    <th></th>
+                                                    <th width="100px"></th>
+                                                    <th><?= $spasi ?>&nbsp;&nbsp;&nbsp;&nbsp; Pekanbaru, <?php echo date('Y m d'); ?></th>
+                                                </tr>
+                                                <tr>
+
+                                                    <td> <br> </td>
+                                                    <td></td>
+                                                    <th><?= $spasi ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LURAH TAMPAN</th>
+                                                </tr>
+                                                <tr>
+                                                    <td rowspan="15"></td>
+                                                    <td></td>
+                                                    <td rowspan="15"><?= $spasi ?><img src="<?= base_url() ?>/assets/img/ttd_lurah.png" width="200" height="100" alt=""></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><b style="text-transform:uppercase"><u></u></b></td>
+                                                    <td></td>
+                                                    <td><?= $spasi3 ?><b><u>Hermayeni, S.Pd</u></b><br><?= $spasi2 ?>NIP. 197008021995122001</td>
+                                                </tr>
+                                            </table>
+                                        </table>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <form method="post" action="<?= base_url(); ?>sistem/cetakSurat/<?= $row->id; ?>">
+                                            <input type="hidden" name="id" value=<?= $row->id ?>>
+                                            <button type="submit" class="btn btn-primary">Cetak</button>
+                                            <button class="btn btn-secondary" type="button" data-dismiss="modal">Batal</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <?php endforeach ?>
+                <?php else : ?>
+                <?php endif ?>

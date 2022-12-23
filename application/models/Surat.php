@@ -76,6 +76,14 @@ class Surat extends CI_Model
         $this->db->join('akun', 'akun.nik=suratketerangandomisili.nik');
         return $this->db->get('suratketerangandomisili')->result();
     }
+    public function cetakSkk($id)
+    {
+        $this->db->select('*');
+        // $this->db->from('suratketerangankematian');
+        $this->db->where(['id' => $id]);
+        $this->db->join('akun', 'akun.nik=suratketerangankematian.nikPemohon');
+        return $this->db->get('suratketerangankematian')->result();
+    }
 
     public function updateSktm($id)
     {

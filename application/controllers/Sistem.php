@@ -26,6 +26,7 @@ class Sistem extends CI_Controller
     {
         $data['dataSktm'] = $this->Surat->cetakSktm($id);
         $data['dataSkd'] = $this->Surat->cetakSkd($id);
+        $data['dataSkk'] = $this->Surat->cetakSkk($id);
         // $data['dataSktm'] = $this->Surat->cetakSktm($id);
         $this->load->view('surat/surat', $data);
     }

@@ -2,7 +2,7 @@
 <ul class="navbar-nav bg-gray-900 sidebar sidebar-dark accordion" id="accordionSidebar">
 
     <!-- Sidebar - Brand -->
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="<?= base_url('HalamanDashboard/admin'); ?>">
         <div class="sidebar-brand-icon">
             <i class="far fa-user"></i>
         </div>

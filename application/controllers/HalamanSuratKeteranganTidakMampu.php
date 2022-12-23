@@ -18,8 +18,6 @@ class HalamanSuratKeteranganTidakMampu extends CI_Controller
     {
         $data['title'] = 'SURAT KETERANGAN TIDAK MAMPU';
         $data['user'] = $this->Akun->getUser();
-        // $data['user'] = $this->db->get_where('akun', ['nik' => $this->session->userdata('nik')])->row_array();
-        // echo 'Selamat datang ' . $data['user']['nama'];
 
         $this->load->view('templates/header', $data);
         $this->load->view('templates/masyarakat', $data);
