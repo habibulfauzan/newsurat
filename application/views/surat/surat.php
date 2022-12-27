@@ -1,3 +1,26 @@
+<?php
+function hariIndo($day)
+{
+    switch ($day) {
+        case 'Sunday':
+            return 'Minggu';
+        case 'Monday':
+            return 'Senin';
+        case 'Tuesday':
+            return 'Selasa';
+        case 'Wednesday':
+            return 'Rabu';
+        case 'Thursday':
+            return 'Kamis';
+        case 'Friday':
+            return 'Jumat';
+        case 'Saturday':
+            return 'Sabtu';
+        default:
+            return 'hari tidak valid';
+    }
+}
+?>
 <!-- SKTM -->
 <?php $no = 1;
 if (!empty($dataSktm)) : ?>
@@ -339,7 +362,7 @@ if (!empty($dataSkd)) : ?>
                 <tr>
                     <th></th>
                     <th width="100px"></th>
-                    <th><?= $spasi ?>&nbsp;&nbsp;&nbsp;&nbsp; Pekanbaru, <?php echo date('Y m d'); ?></th>
+                    <th><?= $spasi ?>&nbsp;&nbsp;&nbsp;&nbsp; Pekanbaru, <?php echo date('d m Y'); ?></th>
                 </tr>
                 <tr>
 
@@ -527,7 +550,7 @@ if (!empty($dataSkk)) : ?>
                 <tr>
                     <td>Hari</td>
                     <td>:</td>
-                    <td><?= date('l', strtotime($row->tanggakKematian)); ?></td>
+                    <td><?= hariIndo(date('l', strtotime($row->tanggakKematian))) ?></td>
                 </tr>
                 <tr>
                     <td>Tanggal</td>
@@ -585,7 +608,7 @@ if (!empty($dataSkk)) : ?>
                 <tr>
                     <th></th>
                     <th width="100px"></th>
-                    <th><?= $spasi ?>&nbsp;&nbsp;&nbsp;&nbsp; Pekanbaru, <?php echo date('Y m d'); ?></th>
+                    <th><?= $spasi ?>&nbsp;&nbsp;&nbsp;&nbsp; Pekanbaru, <?php echo date('d m Y'); ?></th>
                 </tr>
                 <tr>
 

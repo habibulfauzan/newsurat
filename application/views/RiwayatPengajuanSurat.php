@@ -690,7 +690,7 @@ if (!empty($surat_user2)) : ?>
                                 <tr>
                                     <th></th>
                                     <th width="100px"></th>
-                                    <th><?= $spasi ?>&nbsp;&nbsp;&nbsp;&nbsp; Pekanbaru, <?php echo date('Y m d'); ?></th>
+                                    <th><?= $spasi ?>&nbsp;&nbsp;&nbsp;&nbsp; Pekanbaru, <?php echo date('d m Y'); ?></th>
                                 </tr>
                                 <tr>
 
@@ -953,7 +953,7 @@ if (!empty($surat_user3)) : ?>
                                 <tr>
                                     <th></th>
                                     <th width="100px"></th>
-                                    <th><?= $spasi ?>&nbsp;&nbsp;&nbsp;&nbsp; Pekanbaru, <?php echo date('Y m d'); ?></th>
+                                    <th><?= $spasi ?>&nbsp;&nbsp;&nbsp;&nbsp; Pekanbaru, <?php echo date('d m Y'); ?></th>
                                 </tr>
                                 <tr>
 
