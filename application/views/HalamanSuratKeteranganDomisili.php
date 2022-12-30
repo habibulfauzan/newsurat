@@ -11,7 +11,7 @@
         <div class="col-md-12">
             <?= $this->session->flashdata('message'); ?>
             <!-- <form method="post" enctype="multipart/form-data" action="<?= base_url(); ?>HalamanSuratKeteranganDomisili/simpan"> -->
-            <?= form_open_multipart('HalamanSuratKeteranganDomisili/simpan') ?>
+            <?= form_open_multipart('sistem/halamanSuratKeteranganDomisili') ?>
             <div class="card">
                 <div class="card-header">FORM TAMBAH REQUEST SKD </div>
                 <div class="card-body">

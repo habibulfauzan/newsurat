@@ -9,7 +9,7 @@
                         <div class="text-center">
                             <h1 class="h4 text-gray-900 mb-4">Create an Account!</h1>
                         </div>
-                        <form class="user" method="POST" action="<?= base_url('HalamanBuatAkun/tampil'); ?>">
+                        <form class="user" method="POST" action="<?= base_url('sistem/halamanBuatAkun'); ?>">
                             <div class="form-group">
                                 <input type="text" class="form-control form-control-user" id="nik" name="nik" placeholder="NIK" value="<?= set_value('nik'); ?>">
                                 <?= form_error('nik', '<small class=text-danger pl-3>', '</small>'); ?>
@@ -69,7 +69,7 @@
                         </form>
                         <hr>
                         <div class="text-center">
-                            <a class="small" href="<?= base_url('HalamanLogin/tampil'); ?>">Sudah memiliki akun? Masuk!</a>
+                            <a class="small" href="<?= base_url('sistem/halamanLogin'); ?>">Sudah memiliki akun? Masuk!</a>
                         </div>
                     </div>
                 </div>

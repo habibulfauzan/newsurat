@@ -19,7 +19,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('HalamanDashboard/masyarakat'); ?>">
+        <a class="nav-link" href="<?= base_url('sistem/halamanDashboard'); ?>">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Dashboard</span></a>
     </li>
@@ -34,7 +34,7 @@
 
     <!-- Nav Item - Charts -->
     <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('HalamanPengajuanSurat/tampil') ?>">
+        <a class="nav-link" href="<?= base_url('sistem/halamanPengajuanSurat') ?>">
             <i class="far fa-fw fa-envelope-open"></i>
             <span>Pengajuan Surat</span></a>
     </li>
@@ -49,7 +49,7 @@
 
     <!-- Nav Item - Dashboard -->
     <li class="nav-item">
-        <a class="nav-link" href="<?= base_url('RiwayatPengajuanSurat') ?>">
+        <a class="nav-link" href="<?= base_url('sistem/riwayatPengajuanSurat') ?>">
             <i class="fas fa-fw fa-history"></i>
             <span>Riwayat Pengajuan Surat</span></a>
     </li>
@@ -96,7 +96,7 @@
                     <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
                         <a class="dropdown-item" href="<?= base_url('sistem/logout') ?>" data-toggle="modal" data-target="#logoutModal">
                             <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-                            Logout
+                            Keluar
                         </a>
                     </div>
                 </li>

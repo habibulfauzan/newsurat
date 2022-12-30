@@ -17,7 +17,7 @@
                                         <h1 class="h4 text-gray-900 mb-4">Halaman Login</h1>
                                     </div>
                                     <?= $this->session->flashdata('message'); ?>
-                                    <form class="user" method="post" action="<?= base_url('HalamanLogin/tampil'); ?>">
+                                    <form class="user" method="post" action="<?= base_url('sistem/halamanLogin'); ?>">
                                         <div class=" form-group">
                                             <input type="text" class="form-control form-control-user" id="nik" aria-describedby="NIK" placeholder="NIK" name="nik" value="<?= set_value('nik') ?>">
                                             <?= form_error('nik', '<small class=text-danger pl-3>', '</small>'); ?>
@@ -32,7 +32,7 @@
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="<?= base_url('HalamanBuatAkun/tampil'); ?>">Buat Akun!</a>
+                                        <a class="small" href="<?= base_url('sistem/halamanBuatAkun'); ?>">Buat Akun!</a>
                                     </div>
                                 </div>
                             </div>

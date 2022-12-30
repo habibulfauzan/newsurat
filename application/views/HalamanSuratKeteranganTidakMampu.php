@@ -14,7 +14,7 @@
             // var_dump($cek);
             ?>
             <!-- <form method="post" enctype="multipart/form-data" action="<?= base_url(); ?>HalamanSuratKeteranganTidakMampu/simpan"> -->
-            <?= form_open_multipart('HalamanSuratKeteranganTidakMampu/simpan') ?>
+            <?= form_open_multipart('sistem/halamanSuratKeteranganTidakMampu') ?>
             <div class="card">
                 <div class="card-header">FORM TAMBAH REQUEST SKTM </div>
                 <div class="card-body">

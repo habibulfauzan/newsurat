@@ -312,7 +312,7 @@
         <div class="modal fade" id="accPengajuan<?= $key->id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg ">
                 <div class="modal-content">
-                    <form method="post" action="<?= base_url(); ?>HalamanPengajuanSurat/updateSktm/<?= $key->id; ?>">
+                    <form method="post" action="<?= base_url(); ?>sistem/updateSktm/<?= $key->id; ?>">
                         <div class="modal-body text-center">
                             <h5>Terima Pengajuan SKTM ID: <?= $key->id ?></h5>
                             <input type="hidden" name="status" value="1">
@@ -333,7 +333,7 @@
         <div class="modal fade" id="tolakPengajuan<?= $key->id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg ">
                 <div class="modal-content">
-                    <form method="post" action="<?= base_url(); ?>HalamanPengajuanSurat/updateSktm/<?= $key->id; ?>">
+                    <form method="post" action="<?= base_url(); ?>sistem/updateSktm/<?= $key->id; ?>">
                         <div class="modal-body text-center">
                             <h5>Tolak Pengajuan SKTM ID: <?= $key->id; ?></h5>
 
@@ -358,7 +358,7 @@
         <div class="modal fade" id="accPengajuanSdk<?= $key->id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg ">
                 <div class="modal-content">
-                    <form method="post" action="<?= base_url(); ?>HalamanPengajuanSurat/updateSkd/<?= $key->id; ?>">
+                    <form method="post" action="<?= base_url(); ?>sistem/updateSkd/<?= $key->id; ?>">
                         <div class="modal-body text-center">
                             <h5>Terima Pengajuan SKD ID: <?= $key->id ?></h5>
                             <input type="hidden" name="status" value="1">
@@ -379,7 +379,7 @@
         <div class="modal fade" id="tolakPengajuanSdk<?= $key->id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg ">
                 <div class="modal-content">
-                    <form method="post" action="<?= base_url(); ?>HalamanPengajuanSurat/updateSkd/<?= $key->id; ?>">
+                    <form method="post" action="<?= base_url(); ?>sistem/updateSkd/<?= $key->id; ?>">
                         <div class="modal-body text-center">
                             <h5>Tolak Pengajuan SKD ID: <?= $key->id; ?></h5>
 
@@ -403,7 +403,7 @@
         <div class="modal fade" id="accPengajuanSkk<?= $key->id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg ">
                 <div class="modal-content">
-                    <form method="post" action="<?= base_url(); ?>HalamanPengajuanSurat/updateSkk/<?= $key->id; ?>">
+                    <form method="post" action="<?= base_url(); ?>sistem/updateSkk/<?= $key->id; ?>">
                         <div class="modal-body text-center">
                             <h5>Terima Pengajuan SKK ID: <?= $key->id ?></h5>
                             <input type="hidden" name="status" value="1">
@@ -424,7 +424,7 @@
         <div class="modal fade" id="tolakPengajuanSkk<?= $key->id; ?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg ">
                 <div class="modal-content">
-                    <form method="post" action="<?= base_url(); ?>HalamanPengajuanSurat/updateSkk/<?= $key->id; ?>">
+                    <form method="post" action="<?= base_url(); ?>sistem/updateSkk/<?= $key->id; ?>">
                         <div class="modal-body text-center">
                             <h5>Tolak Pengajuan SKK ID: <?= $key->id; ?></h5>
 

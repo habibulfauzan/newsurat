@@ -11,7 +11,7 @@
         <div class="col-md-12">
             <?= $this->session->flashdata('message'); ?>
             <!-- <form method="post" enctype="multipart/form-data" action="<?= base_url(); ?>HalamanSuratKeteranganKematian/simpan"> -->
-            <?= form_open_multipart('HalamanSuratKeteranganKematian/simpanSurat') ?>
+            <?= form_open_multipart('sistem/halamanSuratKeteranganKematian') ?>
             <div class="card">
                 <div class="card-header">PEMOHON SURAT KETERANGAN KEMATIAN </div>
                 <div class="card-body">

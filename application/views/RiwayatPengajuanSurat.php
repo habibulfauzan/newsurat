@@ -23,10 +23,6 @@ function hariIndo($day)
 ?>
 <!-- Begin Page Content -->
 <div class="container-fluid">
-
-    <!-- Page Heading -->
-    <!-- <h1 class="h3 mb-2 text-gray-800">RIWAYAT PENGAJUAN SURAT</h1> -->
-    <!-- DataTales Example -->
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h3 class="m-0 font-weight-bold text-gray-800">RIWAYAT PENGAJUAN SURAT - SKTM</h3>
@@ -224,7 +220,7 @@ function hariIndo($day)
 
 </div>
 <!-- End of Main Content -->
-<?php $no = 1;
+<?php
 if (!empty($surat_user)) : ?>
     <?php foreach ($surat_user as $row) : ?>
         <div class="modal fade" id="lihatFile<?= $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="fileLampiran" aria-hidden="true">
@@ -259,7 +255,7 @@ if (!empty($surat_user)) : ?>
 <?php else : ?>
 <?php endif ?>
 
-<?php $no = 1;
+<?php
 if (!empty($surat_user2)) : ?>
     <?php foreach ($surat_user2 as $row) : ?>
         <div class="modal fade" id="lihatFile2<?= $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="fileLampiran" aria-hidden="true">
@@ -292,7 +288,7 @@ if (!empty($surat_user2)) : ?>
 <?php else : ?>
 <?php endif ?>
 
-<?php $no = 1;
+<?php
 if (!empty($surat_user3)) : ?>
     <?php foreach ($surat_user3 as $row) : ?>
         <div class="modal fade" id="lihatFile3<?= $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="fileLampiran" aria-hidden="true">
@@ -327,7 +323,7 @@ if (!empty($surat_user3)) : ?>
 
 
 <!-- START MODAL CETAK SKTM -->
-<?php $no = 1;
+<?php
 if (!empty($surat_user)) : ?>
     <?php foreach ($surat_user as $row) : ?>
         <div class="modal fade" id="cetakSuratSktm<?= $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="fileLampiran" aria-hidden="true">
@@ -552,7 +548,7 @@ if (!empty($surat_user)) : ?>
 <!-- END MODAL CETAK SKTM -->
 
 <!-- START MODAL CETAK SKD -->
-<?php $no = 1;
+<?php
 if (!empty($surat_user2)) : ?>
     <?php foreach ($surat_user2 as $row) : ?>
         <div class="modal fade" id="cetakSuratSkd<?= $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="fileLampiran" aria-hidden="true">
@@ -773,7 +769,7 @@ if (!empty($surat_user2)) : ?>
 <!-- END MODAL CETAK SKD -->
 
 <!-- START MODAL CETAK SKK -->
-<?php $no = 1;
+<?php
 if (!empty($surat_user3)) : ?>
     <?php foreach ($surat_user3 as $row) : ?>
         <div class="modal fade" id="cetakSuratSkk<?= $row->id; ?>" tabindex="-1" role="dialog" aria-labelledby="fileLampiran" aria-hidden="true">
