@@ -148,7 +148,7 @@ class Sistem extends CI_Controller
             $this->load->view('lurah/HalamanDashboard', $data);
             $this->load->view('templates/footer');
         } else {
-            $data['title'] = 'My Profile';
+            $data['title'] = 'Dashboard Masyarakat';
             $data['user'] = $this->Akun->getUser();
 
             $this->load->view('templates/header', $data);
@@ -519,7 +519,7 @@ class Sistem extends CI_Controller
     public function riwayatPengajuanSurat()
     {
 
-        $data['title'] = 'RIWAYAT PENGAJUAN SURAT';
+        $data['title'] = 'Riwayat Pengajuan Surat';
         $data['user'] = $this->Akun->getUser();
         // $data['user'] = $this->db->get_where('akun', ['nik' => $this->session->userdata('nik')])->row_array();
 
